@@ -1,0 +1,551 @@
+[ 2025 07 23, 11 39 17 ] SELECT * FROM tb_konten WHERE 1=1  AND tb_konten.tipe_konten='IPP DESKRIPSI'  ORDER BY tb_konten.id DESC
+[ 2025 07 23, 11 39 17 ] WITH master_indikator AS (
+                SELECT 
+                    id,
+                    domain,
+                    indikator,
+                    definisi,
+                    min_value,
+                    max_value
+                FROM tb_ipp
+                WHERE id BETWEEN 1 AND 16 
+            )
+
+            SELECT 
+                m.id,
+                m.domain,
+                m.indikator,
+                m.definisi,
+                m.min_value,
+                m.max_value,
+                nvl(d.data, 0) AS data,
+                '2025' AS tahun
+            FROM master_indikator m
+            LEFT JOIN tb_ipp d
+                ON m.domain = d.domain AND m.indikator = d.indikator       
+                AND d.tahun = '2025'  
+            ORDER BY m.id
+    
+[ 2025 07 23, 11 39 17 ] SELECT * FROM tb_ipp_dokumen WHERE 1=1  ORDER BY tahun DESC
+[ 2025 07 23, 11 39 17 ] masuk
+[ 2025 07 23, 11 39 17 ] WITH master_indikator AS (
+                SELECT 
+                    id,
+                    domain,
+                    indikator,
+                    definisi,
+                    min_value,
+                    max_value
+                FROM tb_ipp
+                WHERE id BETWEEN 1 AND 16 
+            )
+
+            SELECT 
+                m.id,
+                m.domain,
+                m.indikator,
+                m.definisi,
+                m.min_value,
+                m.max_value,
+                nvl(d.data, 0) AS data,
+                '2025' AS tahun
+            FROM master_indikator m
+            LEFT JOIN tb_ipp d
+                ON m.domain = d.domain AND m.indikator = d.indikator       
+                AND d.tahun = '2025'  
+            ORDER BY m.id
+    
+[ 2025 07 23, 11 39 17 ] WITH master_indikator AS (
+                SELECT 
+                    id,
+                    domain,
+                    indikator,
+                    definisi,
+                    min_value,
+                    max_value
+                FROM tb_ipp
+                WHERE id BETWEEN 1 AND 16 
+            )
+
+            SELECT 
+                m.id,
+                m.domain,
+                m.indikator,
+                m.definisi,
+                m.min_value,
+                m.max_value,
+                nvl(d.data, 0) AS data,
+                '2024' AS tahun
+            FROM master_indikator m
+            LEFT JOIN tb_ipp d
+                ON m.domain = d.domain AND m.indikator = d.indikator       
+                AND d.tahun = '2024'  
+            ORDER BY m.id
+    
+[ 2025 07 23, 11 39 17 ] WITH master_indikator AS (
+                SELECT 
+                    id,
+                    domain,
+                    indikator,
+                    definisi,
+                    min_value,
+                    max_value
+                FROM tb_ipp
+                WHERE id BETWEEN 1 AND 16 
+            )
+
+            SELECT 
+                m.id,
+                m.domain,
+                m.indikator,
+                m.definisi,
+                m.min_value,
+                m.max_value,
+                nvl(d.data, 0) AS data,
+                '2023' AS tahun
+            FROM master_indikator m
+            LEFT JOIN tb_ipp d
+                ON m.domain = d.domain AND m.indikator = d.indikator       
+                AND d.tahun = '2023'  
+            ORDER BY m.id
+    
+[ 2025 07 23, 11 39 17 ] WITH master_indikator AS (
+                SELECT 
+                    id,
+                    domain,
+                    indikator,
+                    definisi,
+                    min_value,
+                    max_value
+                FROM tb_ipp
+                WHERE id BETWEEN 1 AND 16 
+            )
+
+            SELECT 
+                m.id,
+                m.domain,
+                m.indikator,
+                m.definisi,
+                m.min_value,
+                m.max_value,
+                nvl(d.data, 0) AS data,
+                '2022' AS tahun
+            FROM master_indikator m
+            LEFT JOIN tb_ipp d
+                ON m.domain = d.domain AND m.indikator = d.indikator       
+                AND d.tahun = '2022'  
+            ORDER BY m.id
+    
+[ 2025 07 23, 11 39 17 ] WITH master_indikator AS (
+                SELECT 
+                    id,
+                    domain,
+                    indikator,
+                    definisi,
+                    min_value,
+                    max_value
+                FROM tb_ipp
+                WHERE id BETWEEN 1 AND 16 
+            )
+
+            SELECT 
+                m.id,
+                m.domain,
+                m.indikator,
+                m.definisi,
+                m.min_value,
+                m.max_value,
+                nvl(d.data, 0) AS data,
+                '2021' AS tahun
+            FROM master_indikator m
+            LEFT JOIN tb_ipp d
+                ON m.domain = d.domain AND m.indikator = d.indikator       
+                AND d.tahun = '2021'  
+            ORDER BY m.id
+    
+[ 2025 07 23, 11 39 17 ] WITH master_indikator AS (
+                SELECT 
+                    id,
+                    domain,
+                    indikator,
+                    definisi,
+                    min_value,
+                    max_value
+                FROM tb_ipp
+                WHERE id BETWEEN 1 AND 16 
+            )
+
+            SELECT 
+                m.id,
+                m.domain,
+                m.indikator,
+                m.definisi,
+                m.min_value,
+                m.max_value,
+                nvl(d.data, 0) AS data,
+                '2020' AS tahun
+            FROM master_indikator m
+            LEFT JOIN tb_ipp d
+                ON m.domain = d.domain AND m.indikator = d.indikator       
+                AND d.tahun = '2020'  
+            ORDER BY m.id
+    
+[ 2025 07 23, 11 39 17 ] WITH master_indikator AS (
+                SELECT 
+                    id,
+                    domain,
+                    indikator,
+                    definisi,
+                    min_value,
+                    max_value
+                FROM tb_ipp
+                WHERE id BETWEEN 1 AND 16 
+            )
+
+            SELECT 
+                m.id,
+                m.domain,
+                m.indikator,
+                m.definisi,
+                m.min_value,
+                m.max_value,
+                nvl(d.data, 0) AS data,
+                '2019' AS tahun
+            FROM master_indikator m
+            LEFT JOIN tb_ipp d
+                ON m.domain = d.domain AND m.indikator = d.indikator       
+                AND d.tahun = '2019'  
+            ORDER BY m.id
+    
+[ 2025 07 23, 11 39 17 ] WITH master_indikator AS (
+                SELECT 
+                    id,
+                    domain,
+                    indikator,
+                    definisi,
+                    min_value,
+                    max_value
+                FROM tb_ipp
+                WHERE id BETWEEN 1 AND 16 
+            )
+
+            SELECT 
+                m.id,
+                m.domain,
+                m.indikator,
+                m.definisi,
+                m.min_value,
+                m.max_value,
+                nvl(d.data, 0) AS data,
+                '2018' AS tahun
+            FROM master_indikator m
+            LEFT JOIN tb_ipp d
+                ON m.domain = d.domain AND m.indikator = d.indikator       
+                AND d.tahun = '2018'  
+            ORDER BY m.id
+    
+[ 2025 07 23, 11 39 17 ] WITH master_indikator AS (
+                SELECT 
+                    id,
+                    domain,
+                    indikator,
+                    definisi,
+                    min_value,
+                    max_value
+                FROM tb_ipp
+                WHERE id BETWEEN 1 AND 16 
+            )
+
+            SELECT 
+                m.id,
+                m.domain,
+                m.indikator,
+                m.definisi,
+                m.min_value,
+                m.max_value,
+                nvl(d.data, 0) AS data,
+                '2017' AS tahun
+            FROM master_indikator m
+            LEFT JOIN tb_ipp d
+                ON m.domain = d.domain AND m.indikator = d.indikator       
+                AND d.tahun = '2017'  
+            ORDER BY m.id
+    
+[ 2025 07 23, 11 39 56 ] SELECT distinct tag FROM tb_artikel WHERE tag!=''  AND tipe='AKTIVITAS' ORDER BY tag
+[ 2025 07 23, 11 39 56 ] SELECT * FROM tb_artikel WHERE visibility='1' AND tipe='AKTIVITAS'  ORDER BY tb_artikel.id DESC, tb_artikel.priority ASC LIMIT 6 OFFSET 0
+[ 2025 07 23, 11 39 56 ] SELECT * FROM tb_artikel WHERE visibility='1' AND tipe='AKTIVITAS' ORDER BY tb_artikel.priority ASC LIMIT 6
+[ 2025 07 23, 11 39 56 ] SELECT count(*) AS jumlah FROM tb_artikel WHERE visibility='1'  AND tipe='AKTIVITAS'  ORDER BY tb_artikel.id DESC, tb_artikel.priority ASC
+[ 2025 07 23, 11 39 56 ] SELECT distinct kategori FROM tb_artikel WHERE kategori!=''   AND tipe='AKTIVITAS' ORDER BY kategori
+[ 2025 07 23, 11 41 31 ] SELECT * FROM tb_konten WHERE 1=1  AND tb_konten.tipe_konten='IPP DESKRIPSI'  ORDER BY tb_konten.id DESC
+[ 2025 07 23, 11 41 31 ] WITH master_indikator AS (
+                SELECT 
+                    id,
+                    domain,
+                    indikator,
+                    definisi,
+                    min_value,
+                    max_value
+                FROM tb_ipp
+                WHERE id BETWEEN 1 AND 16 
+            )
+
+            SELECT 
+                m.id,
+                m.domain,
+                m.indikator,
+                m.definisi,
+                m.min_value,
+                m.max_value,
+                nvl(d.data, 0) AS data,
+                '2025' AS tahun
+            FROM master_indikator m
+            LEFT JOIN tb_ipp d
+                ON m.domain = d.domain AND m.indikator = d.indikator       
+                AND d.tahun = '2025'  
+            ORDER BY m.id
+    
+[ 2025 07 23, 11 41 31 ] SELECT * FROM tb_ipp_dokumen WHERE 1=1  ORDER BY tahun DESC
+[ 2025 07 23, 11 41 31 ] masuk
+[ 2025 07 23, 11 41 31 ] WITH master_indikator AS (
+                SELECT 
+                    id,
+                    domain,
+                    indikator,
+                    definisi,
+                    min_value,
+                    max_value
+                FROM tb_ipp
+                WHERE id BETWEEN 1 AND 16 
+            )
+
+            SELECT 
+                m.id,
+                m.domain,
+                m.indikator,
+                m.definisi,
+                m.min_value,
+                m.max_value,
+                nvl(d.data, 0) AS data,
+                '2025' AS tahun
+            FROM master_indikator m
+            LEFT JOIN tb_ipp d
+                ON m.domain = d.domain AND m.indikator = d.indikator       
+                AND d.tahun = '2025'  
+            ORDER BY m.id
+    
+[ 2025 07 23, 11 41 31 ] WITH master_indikator AS (
+                SELECT 
+                    id,
+                    domain,
+                    indikator,
+                    definisi,
+                    min_value,
+                    max_value
+                FROM tb_ipp
+                WHERE id BETWEEN 1 AND 16 
+            )
+
+            SELECT 
+                m.id,
+                m.domain,
+                m.indikator,
+                m.definisi,
+                m.min_value,
+                m.max_value,
+                nvl(d.data, 0) AS data,
+                '2024' AS tahun
+            FROM master_indikator m
+            LEFT JOIN tb_ipp d
+                ON m.domain = d.domain AND m.indikator = d.indikator       
+                AND d.tahun = '2024'  
+            ORDER BY m.id
+    
+[ 2025 07 23, 11 41 31 ] WITH master_indikator AS (
+                SELECT 
+                    id,
+                    domain,
+                    indikator,
+                    definisi,
+                    min_value,
+                    max_value
+                FROM tb_ipp
+                WHERE id BETWEEN 1 AND 16 
+            )
+
+            SELECT 
+                m.id,
+                m.domain,
+                m.indikator,
+                m.definisi,
+                m.min_value,
+                m.max_value,
+                nvl(d.data, 0) AS data,
+                '2023' AS tahun
+            FROM master_indikator m
+            LEFT JOIN tb_ipp d
+                ON m.domain = d.domain AND m.indikator = d.indikator       
+                AND d.tahun = '2023'  
+            ORDER BY m.id
+    
+[ 2025 07 23, 11 41 31 ] WITH master_indikator AS (
+                SELECT 
+                    id,
+                    domain,
+                    indikator,
+                    definisi,
+                    min_value,
+                    max_value
+                FROM tb_ipp
+                WHERE id BETWEEN 1 AND 16 
+            )
+
+            SELECT 
+                m.id,
+                m.domain,
+                m.indikator,
+                m.definisi,
+                m.min_value,
+                m.max_value,
+                nvl(d.data, 0) AS data,
+                '2022' AS tahun
+            FROM master_indikator m
+            LEFT JOIN tb_ipp d
+                ON m.domain = d.domain AND m.indikator = d.indikator       
+                AND d.tahun = '2022'  
+            ORDER BY m.id
+    
+[ 2025 07 23, 11 41 31 ] WITH master_indikator AS (
+                SELECT 
+                    id,
+                    domain,
+                    indikator,
+                    definisi,
+                    min_value,
+                    max_value
+                FROM tb_ipp
+                WHERE id BETWEEN 1 AND 16 
+            )
+
+            SELECT 
+                m.id,
+                m.domain,
+                m.indikator,
+                m.definisi,
+                m.min_value,
+                m.max_value,
+                nvl(d.data, 0) AS data,
+                '2021' AS tahun
+            FROM master_indikator m
+            LEFT JOIN tb_ipp d
+                ON m.domain = d.domain AND m.indikator = d.indikator       
+                AND d.tahun = '2021'  
+            ORDER BY m.id
+    
+[ 2025 07 23, 11 41 31 ] WITH master_indikator AS (
+                SELECT 
+                    id,
+                    domain,
+                    indikator,
+                    definisi,
+                    min_value,
+                    max_value
+                FROM tb_ipp
+                WHERE id BETWEEN 1 AND 16 
+            )
+
+            SELECT 
+                m.id,
+                m.domain,
+                m.indikator,
+                m.definisi,
+                m.min_value,
+                m.max_value,
+                nvl(d.data, 0) AS data,
+                '2020' AS tahun
+            FROM master_indikator m
+            LEFT JOIN tb_ipp d
+                ON m.domain = d.domain AND m.indikator = d.indikator       
+                AND d.tahun = '2020'  
+            ORDER BY m.id
+    
+[ 2025 07 23, 11 41 31 ] WITH master_indikator AS (
+                SELECT 
+                    id,
+                    domain,
+                    indikator,
+                    definisi,
+                    min_value,
+                    max_value
+                FROM tb_ipp
+                WHERE id BETWEEN 1 AND 16 
+            )
+
+            SELECT 
+                m.id,
+                m.domain,
+                m.indikator,
+                m.definisi,
+                m.min_value,
+                m.max_value,
+                nvl(d.data, 0) AS data,
+                '2019' AS tahun
+            FROM master_indikator m
+            LEFT JOIN tb_ipp d
+                ON m.domain = d.domain AND m.indikator = d.indikator       
+                AND d.tahun = '2019'  
+            ORDER BY m.id
+    
+[ 2025 07 23, 11 41 31 ] WITH master_indikator AS (
+                SELECT 
+                    id,
+                    domain,
+                    indikator,
+                    definisi,
+                    min_value,
+                    max_value
+                FROM tb_ipp
+                WHERE id BETWEEN 1 AND 16 
+            )
+
+            SELECT 
+                m.id,
+                m.domain,
+                m.indikator,
+                m.definisi,
+                m.min_value,
+                m.max_value,
+                nvl(d.data, 0) AS data,
+                '2018' AS tahun
+            FROM master_indikator m
+            LEFT JOIN tb_ipp d
+                ON m.domain = d.domain AND m.indikator = d.indikator       
+                AND d.tahun = '2018'  
+            ORDER BY m.id
+    
+[ 2025 07 23, 11 41 31 ] WITH master_indikator AS (
+                SELECT 
+                    id,
+                    domain,
+                    indikator,
+                    definisi,
+                    min_value,
+                    max_value
+                FROM tb_ipp
+                WHERE id BETWEEN 1 AND 16 
+            )
+
+            SELECT 
+                m.id,
+                m.domain,
+                m.indikator,
+                m.definisi,
+                m.min_value,
+                m.max_value,
+                nvl(d.data, 0) AS data,
+                '2017' AS tahun
+            FROM master_indikator m
+            LEFT JOIN tb_ipp d
+                ON m.domain = d.domain AND m.indikator = d.indikator       
+                AND d.tahun = '2017'  
+            ORDER BY m.id
+    

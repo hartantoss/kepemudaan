@@ -1,0 +1,92 @@
+/* ======================================================= */
+/* GAYA DASAR UNTUK KALENDER                   */
+/* ======================================================= */
+body {
+  background-color: #f5f7fa;
+}
+
+/* Penyesuaian agar kartu dan modal terlihat bagus */
+.card-calendar .card-content {
+  padding: 20px;
+}
+.calendar-header {
+  padding: 16px 24px;
+  background-color: #1e3a8a;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  align-items: center;
+}
+.calendar-header .material-icons {
+  margin-right: 12px;
+}
+.modal .modal-content {
+  padding: 24px;
+}
+.modal .modal-footer {
+  background-color: #f9f9f9;
+}
+.modal-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.detail-row {
+  display: flex;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+.detail-label {
+  width: 120px;
+  font-weight: 600;
+  color: #555;
+}
+.detail-value {
+  flex: 1;
+}
+.detail-value .chip {
+  font-weight: 500;
+}
+
+/* ============================================================= */
+/* KODE RESPONSIVE BARU UNTUK MODE HANDPHONE (FIXED)       */
+/* ============================================================= */
+@media screen and (max-width: 768px) {
+  /* Perkecil font dasar kalender, ini akan mempengaruhi banyak elemen */
+  .fc {
+    font-size: 13px;
+  }
+
+  /* Perkecil judul (nama bulan) di toolbar */
+  .fc-toolbar-title {
+    font-size: 1.4em !important;
+  }
+
+  /* Atur ulang ukuran tombol navigasi agar tidak terlalu besar */
+  .fc-toolbar.fc-header-toolbar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Beri jarak antara baris */
+  }
+
+  /* Pindahkan judul ke tengah */
+  .fc-toolbar-chunk:nth-child(2) {
+    order: -1; /* Pindahkan judul ke paling atas */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Perkecil lagi untuk layar yang sangat sempit */
+  .fc {
+    font-size: 11px;
+  }
+
+  .fc-toolbar-title {
+    font-size: 1.2em !important;
+  }
+
+  /* Sembunyikan tombol list agar tidak terlalu ramai */
+  .fc-listMonth-button {
+    display: none;
+  }
+}

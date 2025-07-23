@@ -1,0 +1,183 @@
+RewriteEngine On
+
+
+RewriteRule ^API/sendEmail API/email.php?sendEmail=1
+RewriteRule ^API/adminLogin API/superadmin.php?login=1
+
+RewriteRule ^API/showAdmin API/superadmin.php?showAdmin=1
+RewriteRule ^API/showRole API/superadmin.php?showRole=1
+RewriteRule ^API/addNewAdmin API/superadmin.php?addNewAdmin=1
+RewriteRule ^API/editAdmin API/superadmin.php?editAdmin=1
+RewriteRule ^API/deleteAdmin API/superadmin.php?deleteAdmin=1
+RewriteRule ^API/resetPassAdmin API/superadmin.php?resetPassword=1
+RewriteRule ^API/registrasi API/superadmin.php?registrasi=1
+RewriteRule ^API/aktivasiAkun API/superadmin.php?aktivasiAkun=1
+RewriteRule ^API/resendCode API/superadmin.php?resendCode=1
+RewriteRule ^API/sendKey API/superadmin.php?sendKey=1
+RewriteRule ^API/lupaPassword API/superadmin.php?lupaPassword=1
+
+RewriteRule ^API/showNavigator API/navigator.php?showNavigator=1
+
+
+RewriteRule ^API/loadArtikel API/artikel.php?loadArtikel=1
+RewriteRule ^API/showTag API/artikel.php?showTag=1
+RewriteRule ^API/showKategori API/artikel.php?showKategori=1
+RewriteRule ^API/showArtikel API/artikel.php?showArtikel=1
+RewriteRule ^API/saveArtikel API/artikel.php?saveArtikel=1
+RewriteRule ^API/deleteArtikel API/artikel.php?deleteArtikel=1
+
+RewriteRule ^API/showPages API/pages.php?showPages=1
+RewriteRule ^API/savePages API/pages.php?savePages=1
+RewriteRule ^API/deletePages API/pages.php?deletePages=1
+
+
+RewriteRule ^API/showJenisData API/jenisData.php?showJenisData=1
+RewriteRule ^API/saveJenisData API/jenisData.php?saveJenisData=1
+RewriteRule ^API/deleteJenisData API/jenisData.php?deleteJenisData=1
+
+RewriteRule ^API/showSurvei API/survei.php?showSurvei=1
+RewriteRule ^API/saveSurvei API/survei.php?saveSurvei=1
+RewriteRule ^API/deleteSurvei API/survei.php?deleteSurvei=1
+
+
+
+RewriteRule ^API/showDokumenIPP API/ippDokumen.php?showDokumenIPP=1
+RewriteRule ^API/loadDokumenIPP API/ippDokumen.php?loadDokumenIPP=1
+RewriteRule ^API/saveDokumenIPP API/ippDokumen.php?saveDokumenIPP=1
+RewriteRule ^API/deleteDokumenIPP API/ippDokumen.php?deleteDokumenIPP=1
+
+
+RewriteRule ^API/showIPP API/ipp.php?showIPP=1
+RewriteRule ^API/loadGraphIPP API/ipp.php?loadGraphIPP=1
+RewriteRule ^API/loadIPP API/ipp.php?loadIPP=1
+RewriteRule ^API/saveIPP API/ipp.php?saveIPP=1
+RewriteRule ^API/deleteIPP API/ipp.php?deleteIPP=1
+
+
+
+RewriteRule ^API/showKonten API/konten.php?showKonten=1
+RewriteRule ^API/saveKonten API/konten.php?saveKonten=1
+RewriteRule ^API/deleteKonten API/konten.php?deleteKonten=1
+
+RewriteRule ^API/loadGraph API/pengkinian.php?loadGraph=1
+
+RewriteRule ^API/loadPemudaInovatifStaging API/pengkinian.php?loadPemudaInovatifStaging=1
+RewriteRule ^API/showPemudaInovatifStaging API/pengkinian.php?showPemudaInovatifStaging=1
+RewriteRule ^API/savePemudaInovatifStaging API/pengkinian.php?savePemudaInovatifStaging=1
+RewriteRule ^API/deletePemudaInovatifStaging API/pengkinian.php?deletePemudaInovatifStaging=1
+RewriteRule ^API/approvePemudaInovatifStaging API/pengkinian.php?approvePemudaInovatifStaging=1
+RewriteRule ^API/rejectPemudaInovatifStaging API/pengkinian.php?rejectPemudaInovatifStaging=1
+RewriteRule ^API/uploadPemudaInovatifStaging API/pengkinian.php?uploadPemudaInovatifStaging=1
+
+
+RewriteRule ^API/loadPemudaPeloporStaging API/pengkinian.php?loadPemudaPeloporStaging=1
+RewriteRule ^API/showPemudaPeloporStaging API/pengkinian.php?showPemudaPeloporStaging=1
+RewriteRule ^API/savePemudaPeloporStaging API/pengkinian.php?savePemudaPeloporStaging=1
+RewriteRule ^API/deletePemudaPeloporStaging API/pengkinian.php?deletePemudaPeloporStaging=1
+RewriteRule ^API/approvePemudaPeloporStaging API/pengkinian.php?approvePemudaPeloporStaging=1
+RewriteRule ^API/rejectPemudaPeloporStaging API/pengkinian.php?rejectPemudaPeloporStaging=1
+RewriteRule ^API/uploadPemudaPeloporStaging API/pengkinian.php?uploadPemudaPeloporStaging=1
+
+
+RewriteRule ^API/loadWirausahaMudaStaging API/pengkinian.php?loadWirausahaMudaStaging=1
+RewriteRule ^API/showWirausahaMudaStaging API/pengkinian.php?showWirausahaMudaStaging=1
+RewriteRule ^API/saveWirausahaMudaStaging API/pengkinian.php?saveWirausahaMudaStaging=1
+RewriteRule ^API/deleteWirausahaMudaStaging API/pengkinian.php?deleteWirausahaMudaStaging=1
+RewriteRule ^API/approveWirausahaMudaStaging API/pengkinian.php?approveWirausahaMudaStaging=1
+RewriteRule ^API/rejectWirausahaMudaStaging API/pengkinian.php?rejectWirausahaMudaStaging=1
+RewriteRule ^API/uploadWirausahaMudaStaging API/pengkinian.php?uploadWirausahaMudaStaging=1
+
+
+RewriteRule ^API/loadPemudaBerprestasiStaging API/pengkinian.php?loadPemudaBerprestasiStaging=1
+RewriteRule ^API/showPemudaBerprestasiStaging API/pengkinian.php?showPemudaBerprestasiStaging=1
+RewriteRule ^API/savePemudaBerprestasiStaging API/pengkinian.php?savePemudaBerprestasiStaging=1
+RewriteRule ^API/deletePemudaBerprestasiStaging API/pengkinian.php?deletePemudaBerprestasiStaging=1
+RewriteRule ^API/approvePemudaBerprestasiStaging API/pengkinian.php?approvePemudaBerprestasiStaging=1
+RewriteRule ^API/rejectPemudaBerprestasiStaging API/pengkinian.php?rejectPemudaBerprestasiStaging=1
+RewriteRule ^API/uploadPemudaBerprestasiStaging API/pengkinian.php?uploadPemudaBerprestasiStaging=1
+
+
+RewriteRule ^API/loadPemudaBerorganisasiStaging API/pengkinian.php?loadPemudaBerorganisasiStaging=1
+RewriteRule ^API/showPemudaBerorganisasiStaging API/pengkinian.php?showPemudaBerorganisasiStaging=1
+RewriteRule ^API/savePemudaBerorganisasiStaging API/pengkinian.php?savePemudaBerorganisasiStaging=1
+RewriteRule ^API/deletePemudaBerorganisasiStaging API/pengkinian.php?deletePemudaBerorganisasiStaging=1
+RewriteRule ^API/approvePemudaBerorganisasiStaging API/pengkinian.php?approvePemudaBerorganisasiStaging=1
+RewriteRule ^API/rejectPemudaBerorganisasiStaging API/pengkinian.php?rejectPemudaBerorganisasiStaging=1
+RewriteRule ^API/uploadPemudaBerorganisasiStaging API/pengkinian.php?uploadPemudaBerorganisasiStaging=1
+
+
+RewriteRule ^API/loadDutaPemudaStaging API/pengkinian.php?loadDutaPemudaStaging=1
+RewriteRule ^API/showDutaPemudaStaging API/pengkinian.php?showDutaPemudaStaging=1
+RewriteRule ^API/saveDutaPemudaStaging API/pengkinian.php?saveDutaPemudaStaging=1
+RewriteRule ^API/deleteDutaPemudaStaging API/pengkinian.php?deleteDutaPemudaStaging=1
+RewriteRule ^API/approveDutaPemudaStaging API/pengkinian.php?approveDutaPemudaStaging=1
+RewriteRule ^API/rejectDutaPemudaStaging API/pengkinian.php?rejectDutaPemudaStaging=1
+RewriteRule ^API/uploadDutaPemudaStaging API/pengkinian.php?uploadDutaPemudaStaging=1
+
+
+RewriteRule ^API/loadOrganisasiKepemudaanStaging API/pengkinian.php?loadOrganisasiKepemudaanStaging=1
+RewriteRule ^API/showOrganisasiKepemudaanStaging API/pengkinian.php?showOrganisasiKepemudaanStaging=1
+RewriteRule ^API/saveOrganisasiKepemudaanStaging API/pengkinian.php?saveOrganisasiKepemudaanStaging=1
+RewriteRule ^API/deleteOrganisasiKepemudaanStaging API/pengkinian.php?deleteOrganisasiKepemudaanStaging=1
+RewriteRule ^API/approveOrganisasiKepemudaanStaging API/pengkinian.php?approveOrganisasiKepemudaanStaging=1
+RewriteRule ^API/rejectOrganisasiKepemudaanStaging API/pengkinian.php?rejectOrganisasiKepemudaanStaging=1
+RewriteRule ^API/uploadOrganisasiKepemudaanStaging API/pengkinian.php?uploadOrganisasiKepemudaanStaging=1
+
+
+RewriteRule ^API/loadKomunitasKepemudaanStaging API/pengkinian.php?loadKomunitasKepemudaanStaging=1
+RewriteRule ^API/showKomunitasKepemudaanStaging API/pengkinian.php?showKomunitasKepemudaanStaging=1
+RewriteRule ^API/saveKomunitasKepemudaanStaging API/pengkinian.php?saveKomunitasKepemudaanStaging=1
+RewriteRule ^API/deleteKomunitasKepemudaanStaging API/pengkinian.php?deleteKomunitasKepemudaanStaging=1
+RewriteRule ^API/approveKomunitasKepemudaanStaging API/pengkinian.php?approveKomunitasKepemudaanStaging=1
+RewriteRule ^API/rejectKomunitasKepemudaanStaging API/pengkinian.php?rejectKomunitasKepemudaanStaging=1
+RewriteRule ^API/uploadKomunitasKepemudaanStaging API/pengkinian.php?uploadKomunitasKepemudaanStaging=1
+
+
+
+
+RewriteRule ^login superadmin/login.php
+RewriteRule ^registrasi superadmin/registrasi.php
+RewriteRule ^homePage page.php?pg=homePage
+RewriteRule ^kepemudaan page.php?pg=kepemudaan
+RewriteRule ^survei page.php?pg=survei
+RewriteRule ^pengkinian page.php?pg=pengkinian
+RewriteRule ^ipp page.php?pg=ipp
+RewriteRule ^artikel page.php?pg=artikel&type=AKTIVITAS
+RewriteRule ^bacaAktivitas/(.+)$ page.php?pg=detailArtikel&j=$1&type=AKTIVITAS
+RewriteRule ^formPemudaInovatif page.php?pg=formPemudaInovatif
+RewriteRule ^formKomunitasKepemudaan page.php?pg=formKomunitasKepemudaan
+RewriteRule ^formDutaPemuda page.php?pg=formDutaPemuda
+RewriteRule ^formOrganisasiKepemudaan page.php?pg=formOrganisasiKepemudaan
+RewriteRule ^formPemudaBerorganisasi page.php?pg=formPemudaBerorganisasi
+RewriteRule ^formPemudaBerprestasi page.php?pg=formPemudaBerprestasi
+RewriteRule ^formPemudaPelopor page.php?pg=formPemudaPelopor
+RewriteRule ^formWirausahaMuda page.php?pg=formWirausahaMuda
+
+
+RewriteRule ^admin/setting superadmin/index.php?pg=setting
+RewriteRule ^admin/homepage superadmin/index.php?pg=homepage
+RewriteRule ^admin/adminDashboard superadmin/index.php?pg=admin
+RewriteRule ^admin/survei superadmin/index.php?pg=survei
+RewriteRule ^admin/ipp superadmin/index.php?pg=ipp
+
+
+RewriteRule ^admin/jenisDataApproval superadmin/index.php?pg=jenisDataApproval
+RewriteRule ^admin/itemDataApproval/(.+)$ superadmin/index.php?pg=itemDataApproval&idJenisData=$1
+RewriteRule ^admin/detailItemApproval/(.+)/(.+)$ superadmin/index.php?pg=detailItemApproval&idJenisData=$1&idItem=$2
+
+
+RewriteRule ^admin/jenisData superadmin/index.php?pg=jenisData
+RewriteRule ^admin/itemData/(.+)$ superadmin/index.php?pg=itemData&idJenisData=$1
+RewriteRule ^admin/detailItem/(.+)/(.+)$ superadmin/index.php?pg=detailItem&idJenisData=$1&idItem=$2
+
+
+RewriteRule ^admin/acara superadmin/index.php?pg=artikel&tipe=ACARA
+RewriteRule ^admin/detailAcara/(.+)$ superadmin/index.php?pg=detailArtikel&tipe=ACARA&idArtikel=$1
+RewriteRule ^admin/detailData/(.+)$ superadmin/index.php?pg=detailArtikel&tipe=DATA&idArtikel=$1
+RewriteRule ^admin/berita superadmin/index.php?pg=artikel&tipe=BERITA
+RewriteRule ^admin/detailBerita/(.+)$ superadmin/index.php?pg=detailArtikel&tipe=BERITA&idArtikel=$1
+RewriteRule ^admin/aktivitas superadmin/index.php?pg=artikel&tipe=AKTIVITAS
+RewriteRule ^admin/detailAktivitas/(.+)$ superadmin/index.php?pg=detailArtikel&tipe=AKTIVITAS&idArtikel=$1
+
+
+ErrorDocument 404 /disparporaSerang/404.php

@@ -1,0 +1,12 @@
+<?php
+$val=array('proses_pengajuan_status','proses_pengajuan_tanggal','proses_verifikasi_status','proses_verifikasi_tanggal','proses_kelengkapan_status','proses_kelengkapan_tanggal','proses_penugasan_status','proses_penugasan_tanggal','proses_korektor_status','proses_korektor_tanggal','proses_persetujuan_status','proses_persetujuan_tanggal','proses_penerbitan_status','proses_penerbitan_tanggal','kelengkapan_D1_file','kelengkapan_D1_status','kelengkapan_D1_catatan','kelengkapan_D2_file','kelengkapan_D2_status','kelengkapan_D2_catatan','kelengkapan_D3_file','kelengkapan_D3_status','kelengkapan_D3_catatan','kelengkapan_D4_file','kelengkapan_D4_status','kelengkapan_D4_catatan','kelengkapan_D5_file','kelengkapan_D5_status','kelengkapan_D5_catatan','kelengkapan_D6_file','kelengkapan_D6_status','kelengkapan_D6_catatan','kelengkapan_D7_file','kelengkapan_D7_status','kelengkapan_D7_catatan','kelengkapan_D8_file','kelengkapan_D8_status','kelengkapan_D8_catatan','kelengkapan_D9_file','kelengkapan_D9_status','kelengkapan_D9_catatan','kelengkapan_D10_file','kelengkapan_D10_status','kelengkapan_D10_catatan');
+$val2=array('Tahun Usulan','Scan Surat Permohonan','Scan Usulan Rab','Scan Surat Pernyataan','Scan Foto Kondisi Nol','Scan Gambar Siteplan','Scan Pakta Integritas','Scan Katalog Barang','Nilai Usulan','Kecamatan Usulan Id','Desa Usulan Id','Dusun Usulan','Rt Usulan','Rw Usulan','Alamat Usulan','Latlong Usulan','Scan Sertifikat Lahan Lokasi','Status Verifikasi Usulan','Catatan Verifikasi Skpd','Nama Pengusul','Fraksi','Urusan','Nama Usulan','Permasalahan','Rekom Setwan','Rekom Mitra','Kategori Usulan','Rekom Skpd','Rekom Bappeda','Subkegiatan');
+$val3=array('tahun_usulan','scan_surat_permohonan','scan_usulan_rab','scan_surat_pernyataan','scan_foto_kondisi_nol','scan_gambar_siteplan','scan_pakta_integritas','scan_katalog_barang','nilai_usulan','kecamatan_usulan_id','desa_usulan_id','dusun_usulan','rt_usulan','rw_usulan','alamat_usulan','latlong_usulan','scan_sertifikat_lahan_lokasi','status_verifikasi_usulan','catatan_verifikasi_skpd','nama_pengusul','fraksi','urusan','nama_usulan','permasalahan','rekom_setwan','rekom_mitra','kategori_usulan','rekom_skpd','rekom_bappeda','subkegiatan');
+echo "<pre>";
+// echo "array(";
+for($a=1;$a<sizeof($val);$a++){
+    echo "if(isset(\$_POST['".$val[$a]."'])) \$myValue['".$val[$a]."']=htmlentities(strip_tags(trim(\$_POST['".$val[$a]."'])))\r";
+}
+// echo ");";
+echo "</pre>";
+?>

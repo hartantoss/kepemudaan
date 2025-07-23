@@ -1,0 +1,146 @@
+Rokok
+
+tb_perusahaan
+// PROFIL UMUM
+- id|int|11
+- nama_perusahaan|text|
+- nama_merek|varchar|255
+- jenis_rokok|varchar|255
+- nama_pemilik|varchar|255
+- jenis_kelamin|varchar|255
+- alamat_kantor|text|
+- rt_alamat_kantor|varchar|5
+- rw_alamat_kantor|varchar|5
+- dusun_alamat_kantor|varchar|255
+- desa_alamat_kantor|varchar|255
+- kecamatan_alamat_kantor|varchar|255
+- kota_alamat_kantor|varchar|255
+- provinsi_alamat_kantor|varchar|255
+- telp_alamat_kantor|varchar|255
+- alamat_pabrik|text|
+- rt_alamat_pabrik|varchar|5
+- rw_alamat_pabrik|varchar|5
+- dusun_alamat_pabrik|varchar|255
+- desa_alamat_pabrik|varchar|255
+- kecamatan_alamat_pabrik|varchar|255
+- kota_alamat_pabrik|varchar|255
+- provinsi_alamat_pabrik|varchar|255
+- telp_alamat_pabrik|varchar|255
+- badan_usaha|varchar|255
+- tahun_berdiri|varchar|10
+- nilai_investasi|varchar|255
+
+
+// PERIZINAN PERUSAHAAN
+- nppbkc|varchar|255
+- iui|varchar|255
+- tdi|varchar|255
+- nib|varchar|255
+- lainnya|varchar|255
+
+
+// BAHAN BAKU
+- kapasitas_perhari|varchar|255
+
+
+// PENGUJIAN TAR DAN NIKOTIN
+- pengujian_tar|varchar|255
+- pengujian_nikotin|varchar|255
+
+
+// PEMASARAN
+- pemasaran_lokal|varchar|255
+- pemasaran_regional|varchar|255
+- pemasaran_nasional|varchar|255
+- pemasaran_internasional|varchar|255
+- pemasaran_offline|varchar|255
+- pemasaran_online|varchar|255
+
+
+// ANSURANSI
+- ansuransi_pekerja|varchar|255
+- jenis_ansuransi|varchar|255
+- nama_ansuransi|varchar|255
+- penyedia_ansuransi|varchar|255
+
+
+// CABANG
+- cabang_nama_perusahaan|varchar|255
+- cabang_badan_usaha|varchar|255
+- cabang_merk|varchar|255
+- cabang_alamat|text|
+- cabang_tahun_berdiri|varchar|10
+
+
+
+
+
+tb_bahan_baku
+- id|int|11
+- id_perusahaan|int|11
+- nilai|varchar|255
+- asal_daerah|varchar|255
+
+
+tb_bahan_penolong
+- id|int|11
+- id_perusahaan|int|11
+- nilai|varchar|255
+- asal_daerah|varchar|255
+
+tb_kemitraan
+- id|int|11
+- id_perusahaan|int|11
+- nama|varchar|255
+
+tb_realisasi
+- id|int|11
+- id_perusahaan|int|11
+- tahun|varchar|10
+- nilai|varchar|255
+
+tb_mesin
+- id|int|11
+- id_perusahaan|int|11
+- jenis|varchar|255
+- jumlah|varchar|255
+- nomor|varchar|255
+- merk|varchar|255
+- tipe|varchar|255
+- kapasitas|varchar|255
+- asal_negara|varchar|255
+- sertifikasi|varchar|255
+
+tb_pita_cukai
+- id|int|11
+- id_perusahaan|int|11
+- tahun|varchar|10
+- tarif|varchar|255
+- hje|varchar|255
+- jenis_tembakau|varchar|255
+- isi|varchar|255
+
+tb_tenaga_kerja
+- id|int|11
+- id_perusahaan|int|11
+- jenis_kelamin|varchar|255
+- jumlah|varchar|255
+- divisi|varchar|255
+- disabilitas|boolean|
+
+tb_foto
+- id|int|11
+- id_perusahaan|int|11
+- url|varchar|255
+- jenis|varchar|255
+
+
+tb_admin
+- id|int|11
+- nama|varchar|255
+- username|varchar|255
+- password|varchar|255
+- jenis|varchar|255
+- avatar|varchar|255
+- created|varchar|255
+
